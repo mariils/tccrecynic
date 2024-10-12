@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f5;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar_logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+.navbar_toggle {
+    display: none;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar_item {
+    margin-left: 20px;
+}
+
+.navbar_links {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.navbar_links:hover {
+    color: #2e7d32;
+}
+
+.navbar_btn .botao {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.navbar_btn .botao:hover {
+    background-color: #1e5f22;
+}
+
+/* Hero Section */
+.homepage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    background: rgb(182,220,133);
+background: linear-gradient(0deg, rgba(182,220,133,0.8925945378151261) 0%, rgba(209,245,191,1) 100%);
+}
+
+.homepage__content {
+    max-width: 50%;
+}
+
+.homepage_title {
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.homepage__subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.cta_button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.cta_button:hover {
+    background-color: #1e5f22;
+}
+
+/* Hero Image */
+.imagem__image img {
+    width: 400px;
+    height: auto;
+}
