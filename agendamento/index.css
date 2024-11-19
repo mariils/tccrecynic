@@ -1,0 +1,106 @@
+html{
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0
+}
+
+/* Barra de navegação */
+nav{
+    justify-content: space-between;
+    display: flex;
+    padding: 3px;
+    background-color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 20px 10px;
+    margin-right: 400px;
+}
+
+nav li{
+    padding: 10px;
+    margin-left: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#cad{
+    background-color: #4caf50;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#cad:hover{
+    background-color: #357737;
+}
+
+
+nav li:hover {
+    color: rgb(192, 192, 192);
+}
+
+img{
+    width: 100px;
+    margin-left: 400px;
+    cursor: pointer;
+}
+
+/* botões */
+
+.button-container {
+    padding-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    font-size: 20px;
+    margin-right: 20px;
+    padding: 25px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size:   
+    16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    transition: 0.5s;
+}
+.button a {
+    color: white;
+    font-style: none;
+    text-decoration: none;
+}
+
+
+.green {
+background-color: #357737;
+
+}
+
+.green:hover:hover {
+background-color: #193b1a;
+}
+
+.bege {
+background-color: #40a108;
+}
+
+.bege:hover {
+background-color: #286305;
+}
+
+.button i {
+margin-right: 10px;
+}

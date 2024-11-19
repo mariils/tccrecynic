@@ -1,65 +1,61 @@
+html{
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
 
-
-body {
+body{
+    padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f0f8f5;
     color: #333;
 }
 
+
 /* Navigation Bar */
-.navbar {
-    background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar__container {
-    display: flex;
+nav{
     justify-content: space-between;
-    align-items: center;
-}
-
-#navbar_logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #2e7d32;
-    text-decoration: none;
-}
-
-.navbar_toggle {
-    display: none;
-}
-
-.navbar_menu {
     display: flex;
+    padding: 3px;
+    background-color: white;
+}
+
+nav ul {
     list-style: none;
+    display: flex;
+    padding: 20px 10px;
+    margin-right: 400px;
 }
 
-.navbar_item {
+nav li{
+    padding: 10px;
     margin-left: 20px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
-.navbar_links {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-}
-
-.navbar_links:hover {
-    color: #2e7d32;
-}
-
-.navbar_btn .botao {
-    background-color: #2e7d32;
+#cad{
+    background-color: #4caf50;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-.navbar_btn .botao:hover {
-    background-color: #1e5f22;
+#cad:hover{
+    background-color: #357737;
 }
+
+
+nav li:hover {
+    color: rgb(192, 192, 192);
+}
+
+img{
+    width: 100px;
+    margin-left: 400px;
+    cursor: pointer;
+}
+
 
 /* Hero Section */
 .homepage {
