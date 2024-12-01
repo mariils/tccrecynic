@@ -67,6 +67,16 @@ button:focus {
 button.ghost {
     background-color: transparent;
     border-color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button.ghost:hover {
+    color: #2b8015;
+    background-color: transparent;
+    border-color: #FFFFFF;
+    cursor: pointer;
+    background-color: white;
 }
  
 form {
@@ -85,7 +95,7 @@ input {
     border: none;
     padding: 12px 15px;
     margin: 8px 0;
-    width: 100%;
+    width: 100%;    
 }
  
 .container {
@@ -159,9 +169,9 @@ input {
 }
  
 .overlay {
-    background: #95f378;
-    background: -webkit-linear-gradient(to right, #54eb6d, #8a8a8a);
-    background: linear-gradient(to right, #7df75f, #11971c);
+    background: #4f923b;
+    background: -webkit-linear-gradient(to right, #40924e, #8a8a8a);
+    background: linear-gradient(to right, #2d6e1d, #11971c);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -223,4 +233,20 @@ input {
     margin: 0 5px;
     height: 40px;
     width: 40px;
+}
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: white; /* cor do background que vai ocupar o body */
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
 }

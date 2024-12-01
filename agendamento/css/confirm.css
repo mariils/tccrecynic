@@ -31,12 +31,30 @@ nav li{
     cursor: pointer;
 }
 
+.nav-a{
+    font-style: none;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+nav li:hover {
+    color: rgb(192, 192, 192);
+}
+
 #cad{
     background-color: #4caf50;
     color: white;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
+}
+
+#cad-text{
+    text-decoration: none;
+    font-style: none;
+    color: white;
+    font-weight: bold;
 }
 
 #cad:hover{
@@ -56,73 +74,28 @@ img{
 
 /* Conteúdo */
 
-.main{
-
-}
 
 /* Primeiro container */
 
 .container-1{
     justify-content: center;
-    align-items: end;
     display: flex;
     height: 200px;
+    align-items: end;
 }
 
-/* barra de pesquisa */
-
-.search{
+.container-2{
     justify-content: center;
     display: flex;
-    padding-top: 40px;
-}
-
-#search-bar{
-    padding: 0px 40px;
-    text-align: left;
-    width: 800px;
-    border: 2px solid #64ba6a;
-    border-radius: 20px 0px 0px 20px;
-}
-
-.back-button {
-    margin-right: 20px;
-    border:2px solid #64ba6a;
-    border-radius: 50px;
-    padding: 0px 20px; 
-    cursor: pointer;
-    color: #64ba6a;
-    transition: 0.5s;
-    font-size: 20px;
-}
-.back-button:hover{
-    background-color: #64ba6a;
-    color: white;
-}
-
-
-.search-button{
-    border: 2px solid #64ba6a;
-    border-left: 0px;
-    border-radius: 0px 20px 20px 0px;
-    padding: 15px;
-    color: #64ba6a;
-    cursor: pointer;
-    transition: 0.5s;
-    font-size: 20px;
-}
-
-.search-button:hover{
-    background-color: #64ba6a;
-    color: white;
+    height: 60px;
+    margin-top: -20px;
 }
 
 /* cards */
 
 .card-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 40px 300px;
     
 }
@@ -173,25 +146,44 @@ img{
 .card button i {
     margin-right:15px ;
 }
-
-/* HTML: <div class="loader"></div> */
-.loader {
-    --d:22px;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    color: #25b09b;
-    box-shadow: 
-      calc(1*var(--d))      calc(0*var(--d))     0 0,
-      calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
-      calc(0*var(--d))      calc(1*var(--d))     0 2px,
-      calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
-      calc(-1*var(--d))     calc(0*var(--d))     0 4px,
-      calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
-      calc(0*var(--d))      calc(-1*var(--d))    0 6px;
-    animation: l27 1s infinite steps(8);
-}
-@keyframes l27 {
-    100% {transform: rotate(1turn)}
+ 
+.card a {
+    font-style: none;
+    text-decoration: none;
 }
 
+.alternate{
+    margin-left: 40px;
+    color: rgb(28, 172, 255);
+    transition: 0.5s;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 30px;
+    border-radius: 30px;
+}
+
+.alternate:hover{
+    background-color: rgba(141, 197, 230, 0.411);
+}
+
+.alternate-anchor{
+    font-style: none;
+    text-decoration: none;
+    color: rgb(28, 172, 255);
+}
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: white; /* cor do background que vai ocupar o body */
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 40%;
+    transform: translate(-50%, -50%);  
+}

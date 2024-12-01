@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
-    <link rel="stylesheet" href="addressstyle.css">
+    <link rel="stylesheet" href="css/addressstyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento</title>
@@ -14,14 +14,15 @@
     <body>
         <div>
             <nav>
-                <img src="imgs/logo recynic.svg" alt="Logo da empresa">
+                <img src="..//imgs/logo recynic.svg" alt="Logo da empresa" class="logo">
                 <ul>
-                    <li>Home</li>
-                    <li>Serviços</li>
-                    <li>Sobre</li>
-                    <li>Parcerias</li>
-                    <li>Ajuda</li>
-                    <li id="cad">Cadastrar-se</li>
+                    <li><a href="..//recynichome.html" class="nav-a">Home</a></li>
+                <li> <a href="/servicos.html"></a>Serviços</li>
+                <li> <a href="/sobre.html"></a>Sobre</li>
+                <li> <a href="/parcerias.html"></a>Parcerias</li>
+                <li> <a href="/ajuda.html"></a>Ajuda</li>
+                <li id="cad"> <a href="entrarecadastrar.html" id="cad-text">Cadastrar-se</a></li>
+                <li id="sign"> <a href="entrarecadastrar.html" id="sign-text">Entrar</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,85 +32,26 @@
                     Escolha um ponto de coleta
                 </h4>
             </div>
-            <div class="search">
-                    <button class="back-button"><i class="fa-solid fa-arrow-left"></i></button>
-                    <input type="text" id="search-bar" placeholder="Pesquise o endereço do ponto desejado">
-                    <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <div class="card-container">
-                <div class="card">
-                  <i class="fas fa-map-marker-alt" id="marker"></i>
-                  <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
-                  <p>São Paulo - SP</p>
-                  <button><i class="fa-regular fa-calendar"></i>Selecionar Local</button>
-                </div>
-                <div class="card">
-                    <i class="fas fa-map-marker-alt" id="marker"></i>
-                    <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
-                    <p>São Paulo - SP</p>
-                    <button><i class="fa-regular fa-calendar"></i>Selecionar Local</button>
-                  </div>
-                  <div class="card">
-                    <i class="fas fa-map-marker-alt" id="marker"></i>
-                    <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
-                    <p>São Paulo - SP</p>
-                    <button><i class="fa-regular fa-calendar"></i>Selecionar Local</button>
-                  </div>
-                  <div class="card">
-                    <i class="fas fa-map-marker-alt" id="marker"></i>
-                    <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
-                    <p>São Paulo - SP</p>
-                    <button><i class="fa-regular fa-calendar"></i>Selecionar Local</button>
-                  </div>
-                  <div class="card">
-                    <i class="fas fa-map-marker-alt" id="marker"></i>
-                    <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
-                    <p id="SP">São Paulo - SP</p>
-                    <button><i class="fa-regular fa-calendar"></i>Selecionar Local</button>
-                  </div>
-                  <div class="card">
-                    <i class="fas fa-map-marker-alt" id="marker"></i>
-                    <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
-                    <p id="SP">São Paulo - SP</p>
-                    <button><i class="fa-regular fa-calendar"></i>Selecionar Local</button>
-                  </div>
-                  <div class="card">
-                    <i class="fas fa-map-marker-alt" id="marker"></i>
-                    <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
-                    <p id="SP">São Paulo - SP</p>
-                    <button><i class="fa-regular fa-calendar"></i>Selecionar Local</button>
-                  </div>
-                  <div class="card">
-                    <i class="fas fa-map-marker-alt" id="marker"></i>
-                    <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
-                    <p id="SP">São Paulo - SP</p>
-                    <button><i class="fa-regular fa-calendar"></i>Selecionar Local</button>
-                  </div>
-                  <div class="card">
-                    <i class="fas fa-map-marker-alt" id="marker"></i>
-                    <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
-                    <p id="SP">São Paulo - SP</p>
-                    <button><i class="fa-regular fa-calendar"></i>Selecionar Local</button>
-                  </div>
-                  <div class="card">
-                    <i class="fas fa-map-marker-alt" id="marker"></i>
-                    <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
-                    <p id="SP">São Paulo - SP</p>
-                    <button><i class="fa-regular fa-calendar"></i>Selecionar Local</button>
-                  </div><div class="card">
-                    <i class="fas fa-map-marker-alt" id="marker"></i>
-                    <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
-                    <p id="SP">São Paulo - SP</p>
-                    <button><i class="fa-regular fa-calendar"></i>Selecionar Local</button>
-                  </div><div class="card">
-                    <i class="fas fa-map-marker-alt" id="marker"></i>
-                    <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
-                    <p id="SP">São Paulo - SP</p>
-                    <button><i class="fa-regular fa-calendar"></i><b>Selecionar Local</b></button>
-                  </div>
-            </div>
         </div>
-        
     </body>
+  <!-- <body>
+      <div id="preloader">
+        <div class="inner">
+        <img src="../imgs/preload.gif">
+        </div>
+    </div>
+    </body>
+
+
+    <script src="..//js/preloader.js"></script> -->
     <script src="https://kit.fontawesome.com/46a33e52e7.js" crossorigin="anonymous"></script>
+    <script src="../js/modal.js"></script>
 </html>
+<script type="text/javascript" src="..//js/animated-img.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".logo"), {
+            max: 35,
+            speed: 400
+        });
+    </script> 
+    </html>

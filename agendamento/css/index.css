@@ -31,12 +31,31 @@ nav li{
     cursor: pointer;
 }
 
+.nav-a{
+    font-style: none;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+nav li:hover {
+    color: rgb(192, 192, 192);
+}
+
+
 #cad{
     background-color: #4caf50;
     color: white;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
+}
+
+#cad-text{
+    text-decoration: none;
+    font-style: none;
+    color: white;
+    font-weight: bold;
 }
 
 #cad:hover{
@@ -103,4 +122,20 @@ background-color: #286305;
 
 .button i {
 margin-right: 10px;
+}
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: white; /* cor do background que vai ocupar o body */
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 40%;
+    transform: translate(-50%, -50%);  
 }

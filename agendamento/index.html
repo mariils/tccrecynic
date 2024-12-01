@@ -6,33 +6,175 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/addressstyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento</title>
 </head>
-<body>
-    <div>
-        <nav>
-            <img src="imgs/logo recynic.svg" alt="Logo da empresa">
-            <ul>
-                <li>Home</li>
-                <li>Serviços</li>
-                <li>Sobre</li>
-                <li>Parcerias</li>
-                <li>Ajuda</li>
-                <li id="cad">Cadastrar-se</li>
-            </ul>
-        </nav>
+    <body>
+        <div>
+            <nav>
+                <img src="..//imgs/logo recynic.svg" alt="Logo da empresa" class="logo">
+                <ul>
+                    <li><a href="..//recynichome.html" class="nav-a">Home</a></li>
+                <li> <a href="/servicos.html"></a>Serviços</li>
+                <li> <a href="/sobre.html"></a>Sobre</li>
+                <li> <a href="/parcerias.html"></a>Parcerias</li>
+                <li> <a href="/ajuda.html"></a>Ajuda</li>
+                <li id="cad"> <a href="entrarecadastrar.html" id="cad-text">Cadastrar-se</a></li>
+                <li id="sign"> <a href="entrarecadastrar.html" id="sign-text">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="container-1">
+                <h4>
+                    Escolha um ponto de coleta
+                </h4>
+            </div>
+            <div class="search">
+                    <button class="back-button"><i class="fa-solid fa-arrow-left"></i></button>
+                    <input type="text" id="search-bar" placeholder="Pesquise o endereço do ponto desejado">
+                    <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="card-container">
+                <div onclick="abrirModal()" class="card">
+                  <i class="fas fa-map-marker-alt" id="marker"></i>
+                  <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
+                  <p>São Paulo - SP</p>
+                  <div>
+                    <a href="confirm.html" class="select-button"><button><i class="fa-regular fa-calendar"></i>Selecionar Local</button></a>
+                  </div>
+                </div>
+                <div onclick="abrirModal()" class="card">
+                  <i class="fas fa-map-marker-alt" id="marker"></i>
+                  <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
+                  <p>São Paulo - SP</p>
+                  <div>
+                    <a href="confirm.html" class="select-button"><button><i class="fa-regular fa-calendar"></i>Selecionar Local</button></a>
+                  </div>
+                </div>
+                <div onclick="abrirModal()" class="card">
+                  <i class="fas fa-map-marker-alt" id="marker"></i>
+                  <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
+                  <p>São Paulo - SP</p>
+                  <div>
+                    <a href="confirm.html" class="select-button"><button><i class="fa-regular fa-calendar"></i>Selecionar Local</button></a>
+                  </div>
+                </div>
+                <div onclick="abrirModal()" class="card">
+                  <i class="fas fa-map-marker-alt" id="marker"></i>
+                  <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
+                  <p>São Paulo - SP</p>
+                  <div>
+                    <a href="confirm.html" class="select-button"><button><i class="fa-regular fa-calendar"></i>Selecionar Local</button></a>
+                  </div>
+                </div>
+                <div onclick="abrirModal()" class="card">
+                  <i class="fas fa-map-marker-alt" id="marker"></i>
+                  <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
+                  <p>São Paulo - SP</p>
+                  <div>
+                    <a href="confirm.html" class="select-button"><button><i class="fa-regular fa-calendar"></i>Selecionar Local</button></a>
+                  </div>
+                </div>
+                <div onclick="abrirModal()" class="card">
+                  <i class="fas fa-map-marker-alt" id="marker"></i>
+                  <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
+                  <p>São Paulo - SP</p>
+                  <div>
+                    <a href="confirm.html" class="select-button"><button><i class="fa-regular fa-calendar"></i>Selecionar Local</button></a>
+                  </div>
+                </div>
+                <div onclick="abrirModal()" class="card">
+                  <i class="fas fa-map-marker-alt" id="marker"></i>
+                  <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
+                  <p>São Paulo - SP</p>
+                  <div>
+                    <a href="confirm.html" class="select-button"><button><i class="fa-regular fa-calendar"></i>Selecionar Local</button></a>
+                  </div>
+                </div>
+                <div onclick="abrirModal()" class="card">
+                  <i class="fas fa-map-marker-alt" id="marker"></i>
+                  <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
+                  <p>São Paulo - SP</p>
+                  <div>
+                    <a href="confirm.html" class="select-button"><button><i class="fa-regular fa-calendar"></i>Selecionar Local</button></a>
+                  </div>
+                </div>
+                <div onclick="abrirModal()" class="card">
+                  <i class="fas fa-map-marker-alt" id="marker"></i>
+                  <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
+                  <p>São Paulo - SP</p>
+                  <div>
+                    <a href="confirm.html" class="select-button"><button><i class="fa-regular fa-calendar"></i>Selecionar Local</button></a>
+                  </div>
+                </div>
+                <div onclick="abrirModal()" class="card">
+                  <i class="fas fa-map-marker-alt" id="marker"></i>
+                  <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
+                  <p>São Paulo - SP</p>
+                  <div>
+                    <a href="confirm.html" class="select-button"><button><i class="fa-regular fa-calendar"></i>Selecionar Local</button></a>
+                  </div>
+                </div>
+                <div onclick="abrirModal()" class="card">
+                  <i class="fas fa-map-marker-alt" id="marker"></i>
+                  <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
+                  <p>São Paulo - SP</p>
+                  <div>
+                    <a href="confirm.html" class="select-button"><button><i class="fa-regular fa-calendar"></i>Selecionar Local</button></a>
+                  </div>
+                </div>
+                <div onclick="abrirModal()" class="card">
+                  <i class="fas fa-map-marker-alt" id="marker"></i>
+                  <p><b>Coleta de Lixo Eletrônico - Av. Rodrigues Montemor, 565</b></p>
+                  <p>São Paulo - SP</p>
+                  <div>
+                    <a href="confirm.html" class="select-button"><button><i class="fa-regular fa-calendar"></i>Selecionar Local</button></a>
+                  </div>
+                </div>
+            </div>
+          <div class="janela-modal" id="janela-modal">
+            <div class="modal">
+              <div class="info-modal">
+                <p><b>Informações</b></p>
+                <button class="fechar" id="fechar">X</button>
+              </div>
+              <div class="content-modal">
+                <h3>São Paulo - SP Av. Rodrigues Montemor, 565</h3>
+              </div>
+              <div class="content-modal">
+                <p><b>Categoria:</b> ?</p>
+                <p><b>Duração:</b> ?</p>
+              </div>
+              <div class="main-button">
+                <a href="confirm.html"><button class="button-modal">Selecionar local</button></a>
+              </div>
+          </div>
+        </div>
+        
+        
+    </body>
+    <!-- <body>
+      <div id="preloader">
+        <div class="inner">
+        <img src="../imgs/preload.gif">
+        </div>
+      
     </div>
-    <div class="button-container">
-        <button class="button green">
-          <i class="fas fa-plus"></i>
-          <a href="address.html">Novo Agendamento</a>
-        </button>
-        <button class="button bege">
-          <i class="fas fa-calendar-alt"></i>
-          Minhas Reservas
-        </button>
-    </div>
-</body>
+    </body>
+
+
+    <script src="..//js/preloader.js"></script> 
+    <script src="https://kit.fontawesome.com/46a33e52e7.js" crossorigin="anonymous"></script>
+    <script src="../js/modal.js"></script>
+</html>
+<script type="text/javascript" src="..//js/animated-img.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".logo"), {
+            max: 35,
+            speed: 400
+        });
+    </script> -->
+</html>

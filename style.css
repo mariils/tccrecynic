@@ -10,6 +10,13 @@ body{
     color: #333;
 }
 
+/*LOGO*/
+.logo {
+    margin-right: 2px;
+    margin-left:8%;
+    
+}
+
 
 /* Navigation Bar */
 nav{
@@ -35,13 +42,43 @@ nav li{
 
 #cad{
     background-color: #4caf50;
-    color: white;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
+   display: inline;
+}
+
+#cad-text{
+    text-decoration: none;
+    font-style: none;
+    color: white;
+    font-weight: bold;
 }
 
 #cad:hover{
+    background-color: #357737;
+}
+
+/*ENTRAR*/
+#sign{
+    background-color: #fafafa;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #4caf50;
+    cursor: pointer;
+    transition: 0.5s;
+   display: inline;
+   margin-left: 2px;
+}
+
+#sign-text{
+    text-decoration: none;
+    font-style: none;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+#sign:hover{
     background-color: #357737;
 }
 
@@ -64,7 +101,7 @@ img{
     align-items: center;
     padding: 9%;
     background: rgb(182,220,133);
-background: linear-gradient(0deg, rgba(182,220,133,0.8925945378151261) 0%, rgba(209,245,191,1) 100%);
+    background: linear-gradient(0deg, rgba(182,220,133,0.8925945378151261) 0%, rgba(209,245,191,1) 100%);
 }
 
 .homepage__content {
@@ -91,7 +128,10 @@ background: linear-gradient(0deg, rgba(182,220,133,0.8925945378151261) 0%, rgba(
     border-radius: 5px;
     text-decoration: none;
     font-size: 18px;
+    transition: 0.5s;
 }
+
+
 
 .cta_button:hover {
     background-color: #1e5f22;
@@ -102,3 +142,29 @@ background: linear-gradient(0deg, rgba(182,220,133,0.8925945378151261) 0%, rgba(
     width: fit-content;
     height: auto;
 }
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border: 20px solid #d4edda;
+    border-radius: 50%;
+}
+
+/* DEU ERRO NO SCRIPT
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: white; / cor do background que vai ocupar o body /
+    z-index:999; / z-index para jogar para frente e sobrepor tudo /
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; / centralizar a parte interna do preload (onde fica a animação)/
+    left: 40%;
+    transform: translate(-50%, -50%);  
+}
+    */
