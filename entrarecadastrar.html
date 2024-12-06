@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="pt-br" >
 <head>
   <meta charset="UTF-8">
   <title>Entrar</title>
@@ -10,7 +10,7 @@
 <!-- partial:index.partial.html -->
 <div class="container" id="container">
     <div class="form-container sign-up-container">
-        <form action="#">
+        <form id="formCadastro"> <!-- cadastro -->
             <h1>Criar Conta</h1>
             <div class="social-container">
              
@@ -18,14 +18,39 @@
                
             </div>
             <span>ou use seu email para registrar-se</span>
-            <input type="text" placeholder="Nome" />
-            <input type="email" placeholder="Email" />
-            <input type="senha" placeholder="Senha" />
-            <button>Cadastrar</button>
+            <input type="text" name="nome" id="nome" placeholder="Nome" required/>
+            <input type="email" name="email" id="email" placeholder="Email" required/>
+            <input type="password" name="senha" id="senha" placeholder="Senha" required/>
+            <button type="submit">Cadastrar</button>
         </form>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Função AJAX para enviar o formulário sem recarregar a página
+        $('#formCadastro').submit(function(e) {
+            e.preventDefault(); // Impede o envio tradicional do formulário
+            
+            // Coleta os dados do formulário
+            var formData = $(this).serialize();
+            
+            // Envia o formulário via AJAX
+            $.ajax({
+                type: "POST",
+                url: "back/cadastrar.php", // Caminho do arquivo PHP
+                data: formData,
+                success: function(response) {
+                    // Exibe um popup com a resposta do PHP
+                    alert(response);  // Exibe a mensagem de sucesso ou erro
+                },
+                error: function() {
+                    alert("Ocorreu um erro ao processar o formulário.");
+                }
+            });
+        });
+    </script>
+    
     <div class="form-container sign-in-container">
-        <form action="#">
+        <form id="loginForm" action="back/login.php" method="post"> <!-- login ===========================================-->
             <h1>Entrar</h1>
             <div class="social-container">
                
@@ -33,12 +58,26 @@
                
             </div>
             <span>ou use sua conta</span>
-            <input type="email" placeholder="Email" />
-            <input type="senha" placeholder="Senha" />
+            <input type="email" name="email" placeholder="Email" required/>
+            <input type="password" name="senha" placeholder="Senha" required/>
             <a href="#">Esqueceu a senha?</a>
-            <button>Entrar</button>
+            <button type="submit">Entrar</button>
+            
         </form>
     </div>
+
+
+    <div id="message"></div>
+    <!-- Pop-up de mensagem -->
+<div id="popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+background-color: #4caf50; color: white; padding: 20px; border-radius: 10px; font-size: 18px; 
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+</div>
+
+
+<script src="js/jquery.min.js"></script> 
+
+
     <div class="overlay-container">
         <div class="overlay">
             <div class="overlay-panel overlay-left">

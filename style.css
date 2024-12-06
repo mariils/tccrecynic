@@ -1,6 +1,6 @@
 html{
     overflow-x: hidden;
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 body{
@@ -41,7 +41,7 @@ nav li{
 }
 
 #cad{
-    background-color: #4caf50;
+    background-color: #5aba73;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
@@ -64,7 +64,7 @@ nav li{
     background-color: #fafafa;
     border-radius: 10px;
     border-style: solid;
-    border-color: #4caf50;
+    border-color: #5aba73;
     cursor: pointer;
     transition: 0.5s;
    display: inline;
@@ -74,7 +74,7 @@ nav li{
 #sign-text{
     text-decoration: none;
     font-style: none;
-    color: #2e7d32;
+    color: #5aba73;
     font-weight: bold;
 }
 
@@ -100,8 +100,7 @@ img{
     justify-content: space-between;
     align-items: center;
     padding: 9%;
-    background: rgb(182,220,133);
-    background: linear-gradient(0deg, rgba(182,220,133,0.8925945378151261) 0%, rgba(209,245,191,1) 100%);
+    background: #ffffff;
 }
 
 .homepage__content {
@@ -122,7 +121,7 @@ img{
 }
 
 .cta_button {
-    background-color: #2e7d32;
+    background-color: #5aba73;
     color: white;
     padding: 15px 30px;
     border-radius: 5px;
@@ -150,21 +149,208 @@ img{
     border-radius: 50%;
 }
 
-/* DEU ERRO NO SCRIPT
+.services-hero{
+    display: flex;
+    justify-content: center;
+    background-color: #5aba73;
+    height: 700px;
+    color: #49825b;
+    align-items: center;
+}
 
-#preloader {
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color: white; / cor do background que vai ocupar o body /
-    z-index:999; / z-index para jogar para frente e sobrepor tudo /
+.services-box{
+    width: 120vh;
+    
 }
-#preloader .inner {
+
+.services-text{
+    color: white;
+    font-weight: bold;
+    margin-left: 95px;
+}
+
+.services-card-box{
+    display: flex;
+    justify-content: center;
+}
+
+.services-card-box i {
+    display: flex;
+    justify-content: center;
+}
+
+.s-card{
+    background-color: white;
+    width: 280px;
+    height: 400px;
+    margin-right: 40px;
+    border-radius: 10px;
+    margin-top: 45px;
+}
+
+.s-card i {
+    font-size: 90px;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+.s-card h5 {
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.sponsor-hero{
+    padding: 20px;
+    height: 70vh;
+    margin-top: 60px;
+}
+
+
+.sponsor-text{
+    display: flex;
+    justify-content: center;
+    color: #5aba73;
+}
+
+.dropdown-content {
+    display: none;
     position: absolute;
-    top: 50%; / centralizar a parte interna do preload (onde fica a animação)/
-    left: 40%;
-    transform: translate(-50%, -50%);  
+    background-color: #f9f9f9;
+    max-width: 40px;
+    min-width: 40px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
-    */
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    max-width: 40px;
+    min-width: 40px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    max-width: 40px;
+    min-width: 40px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dp-button{
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.show {
+    display: contents;
+}
+
+.faq-hero{
+    display: flex;
+    justify-content: center;
+}
+
+.faq-box{
+    display: flex;
+    justify-content: space-between;
+    width: 150vh;
+    padding: 20px;
+    color: #333; 
+}
+
+.faq-text h1{
+    font-size: 70px;
+    margin-top: 60px;
+}
+
+
+.faq-item {
+overflow: hidden; 
+border-bottom: 1px solid black;
+margin-right: -100px;
+}
+
+
+.faq-question {
+background-color: #fff; 
+width: 100%;
+padding: 30px;
+padding-bottom: 50px;
+text-align: left;
+font-size: 18px;
+border: none;
+outline: none;
+cursor: pointer;
+position: relative;
+transition: background-color 0.3s ease; 
+}
+
+
+.faq-question:hover {
+background-color: #ffffff; 
+}
+
+
+.faq-question .arrow {
+position: absolute;
+right: 20px;
+transition: transform 0.3s ease; 
+}
+
+
+.faq-question.active .arrow {
+transform: rotate(180deg); 
+}
+
+
+.faq-answer {
+max-height: 0; 
+overflow: hidden;
+transition: max-height 0.3s ease; 
+background-color: #fff; 
+width: 600px;
+}
+
+.faq-answer p {
+padding: 20px;
+font-size: 16px;
+line-height: 1.5; 
+color: #555; 
+}
+
+.footer-container{
+    background-color: #5aba73;
+    color: white;
+    padding: 90px;
+    margin-top: 190px;
+}
+
+.footer-container hr {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.footer-container a {
+    font-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container span {
+    margin-top: 40px;
+    font-weight: bold;
+    
+}
+
+.footer-container span a {
+    margin-left: 30px;
+}

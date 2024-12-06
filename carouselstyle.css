@@ -1,5 +1,5 @@
 .carousel-section {
-    background-color: #e2f3d0;
+    background-color: #5aba73;
     border-radius: 10px;
     width: 80%;
 }
@@ -9,7 +9,7 @@
     padding-bottom: 80px;
     display: flex;
     justify-content: center;
-    background-color: #d1f5bf;
+    background-color: #ffffff;
 }
 
 .c-item{
@@ -30,16 +30,12 @@
     margin-left: 170px;
     width: 400px;
     margin-top: 50px;
+    color: white;
 }
 
 .c-button {
     color: #5aba73;
     background-color: #5aba73;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon{
-    filter: invert(1);
 }
 
 .c-i-button{

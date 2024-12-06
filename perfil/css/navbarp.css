@@ -1,0 +1,40 @@
+
+/*LOGO*/
+.logo {
+    margin-right: 2px;
+    margin-left:8%;
+    
+}
+
+
+/* Navigation Bar */
+nav{
+    justify-content: space-between;
+    display: flex;
+    padding: 3px;
+    background-color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 20px 10px;
+    margin-right: 400px;
+}
+
+nav li{
+    padding: 10px;
+    margin-left: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+nav li:hover {
+    color: rgb(192, 192, 192);
+}
+
+img{
+    width: 100px;
+    margin-left: 400px;
+    cursor: pointer;
+}

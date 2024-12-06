@@ -1,13 +1,15 @@
 html{
     overflow-x: hidden;
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 body{
     padding: 0;
-    margin: 0;
-    background-color: #f0f0f0
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f5;
+    color: #333;
 }
+
 /*LOGO*/
 .logo {
     margin-right: 2px;
@@ -15,7 +17,8 @@ body{
     
 }
 
-/* Barra de navegação */
+
+/* Navigation Bar */
 nav{
     justify-content: space-between;
     display: flex;
@@ -33,15 +36,8 @@ nav ul {
 nav li{
     padding: 10px;
     margin-left: 20px;
-    transition: 0.2s;
+    transition: 0.5s;
     cursor: pointer;
-}
-
-.nav-a{
-    font-style: none;
-    text-decoration: none;
-    color: black;
-    transition: 0.2s;
 }
 
 #cad{

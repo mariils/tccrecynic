@@ -42,12 +42,13 @@ nav li:hover {
     color: rgb(192, 192, 192);
 }
 
+/*CADASTRO*/
 #cad{
-    background-color: #4caf50;
-    color: white;
+    background-color: #5aba73;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
+   display: inline;
 }
 
 #cad-text{
@@ -58,6 +59,29 @@ nav li:hover {
 }
 
 #cad:hover{
+    background-color: #357737;
+}
+
+/*ENTRAR*/
+#sign{
+    background-color: #fafafa;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #5aba73;
+    cursor: pointer;
+    transition: 0.5s;
+   display: inline;
+   margin-left: 2px;
+}
+
+#sign-text{
+    text-decoration: none;
+    font-style: none;
+    color: #5aba73;
+    font-weight: bold;
+}
+
+#sign:hover{
     background-color: #357737;
 }
 
